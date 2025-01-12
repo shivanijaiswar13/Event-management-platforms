@@ -212,13 +212,195 @@ section{
 }
 .gallery .box .title{
     position: absolute;
-    top: 0;
+    top: -10rem;
     left: 0;
     right: 0;
     background: #333;
     color: #fff;
     text-align: center;
     padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.gallery .box:hover .title{
+    top: 0;
+
+}
+.gallery .box .icons{
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    background: #333;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.gallery .box:hover .icons{
+    bottom: 0;
+}
+.gallery .box .icons a{
+    font-size: 2rem;
+    margin: 5rem 1rem;
+    color: #fff;
+
+}
+.gallery .box .icons a:hover{
+    color: #3867d6;
+}
+.price .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.price .box-container .box{
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+}
+.price .box-container .box:hover{
+    transform: scale(1.03);
+}
+.price .box .title{
+    background: #3867d6;
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+.price .box .amount{
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+.price .box ul{
+    list-style: none;
+    padding: 1rem 0;
+}
+.price .box li{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+.price .box i{
+    color: #3867d6;
+    padding: .5rem;
+}
+.swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.review .box{
+    border-radius: .5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box i{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #3867d6;
+    font-size: 5rem;
+}
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+.review .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .box h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.review .box span{
+    font-size: 1.5rem;
+    color: #eee;
+}
+.review .box p{
+    line-height: 2;
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.contact form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact form .inputbox input,
+.contact form textarea{
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+.contact form .inputbox input::placeholder,
+.contact form textarea::placeholder{
+    color: #eee;
+    text-transform: capitalize;
+}
+.contact form .inputbox input:focus,
+.contact form textarea:focus{
+    background: #444;
+}
+.contact form .inputbox input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.footer{
+    background: #111;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+.footer .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+.footer .box a i{
+    padding-right: 1.5rem;
+    color: #3867d6;
+}
+.footer .box a:hover i{
+    padding-right: 2.5rem;
+    color: #fff;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
     font-size: 2rem;
 }
 
@@ -335,5 +517,8 @@ section{
     .home .slide{
         width: 27rem;
 
+    }
+    .contact form textarea{
+        width: 100%;
     }
 }
